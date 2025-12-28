@@ -2435,3 +2435,135 @@ svg{
     padding-top: 18px !important;
   }
 }
+
+/* =========================
+   Mobile: softer button colors
+========================= */
+@media (max-width: 768px) {
+
+  /* Primary buttons (Download Resume, Hire, Send message) */
+  .btn--primary,
+  .talkBtn,
+  .dockBtn.is-accent {
+    background: linear-gradient(
+      180deg,
+      #e86a1f,
+      #cc5a18
+    );
+    box-shadow: none;
+  }
+
+  /* Ghost buttons (View Resume, Contact, secondary actions) */
+  .btn--ghost {
+    color: #ffb27a;
+    border-color: rgba(255, 178, 122, 0.35);
+    background: rgba(255, 122, 24, 0.08);
+  }
+
+  /* Hover / active states (mobile tap feedback) */
+  .btn:active,
+  .talkBtn:active {
+    transform: scale(0.97);
+    filter: brightness(0.95);
+  }
+
+  /* Navbar hamburger button */
+  .nav__toggle {
+    background: rgba(255, 122, 24, 0.15);
+    border-color: rgba(255, 122, 24, 0.35);
+  }
+
+  .nav__toggle span {
+    background: #ffb27a;
+  }
+
+  /* Back to top */
+  .toTop {
+    background: rgba(255, 122, 24, 0.18);
+    color: #ffb27a;
+    border: 1px solid rgba(255, 178, 122, 0.3);
+  }
+}
+
+/* =========================================================
+   MOBILE BUTTONS — lighter orange (soft, not neon)
+========================================================= */
+@media (max-width: 980px){
+
+  .btn--primary,
+  #contact .talkBtn{
+    /* lighter orange */
+    background: linear-gradient(180deg, #ffa25a, #ff7a2a) !important;
+    border: 1px solid rgba(255, 190, 140, 0.35) !important;
+
+    /* subtle premium highlight */
+    box-shadow:
+      0 14px 34px rgba(0,0,0,.45),
+      inset 0 1px 0 rgba(255,255,255,.22) !important;
+
+    color: #111 !important; /* keeps text crisp */
+  }
+
+  /* Ghost buttons stay calm */
+  .btn--ghost{
+    background: rgba(255,255,255,.06) !important;
+    border-color: rgba(255,255,255,.14) !important;
+    color: rgba(255,255,255,.92) !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — Off-white secondary buttons
+   (View Resume + Contact)
+========================================================= */
+@media (max-width: 980px){
+
+  /* Keep primary CTA orange */
+  .btn--primary{
+    background: linear-gradient(180deg, #ff8a2b, #ff6a1a) !important;
+    color: #111 !important;
+    border-color: rgba(255,190,140,.35) !important;
+  }
+
+  /* View Resume + Contact → off-white */
+  .btn--ghost{
+    background: rgba(255,255,255,.92) !important;
+    color: #111 !important;
+    border: 1px solid rgba(255,255,255,.65) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,.35) !important;
+  }
+
+  /* Subtle tap feedback */
+  .btn--ghost:active{
+    background: rgba(255,255,255,.85) !important;
+    transform: scale(0.98);
+  }
+}
+
+/* MOBILE — unify all button-like elements */
+@media (max-width: 980px){
+
+  /* Primary CTA */
+  .btn--primary,
+  #contact .talkBtn{
+    background: linear-gradient(180deg, #ff8a2b, #ff6a1a) !important;
+    color: #111 !important;
+    border: 1px solid rgba(255,190,140,.35) !important;
+  }
+
+  /* Secondary CTAs */
+  .btn--ghost{
+    background: rgba(255,255,255,.92) !important;
+    color: #111 !important;
+    border: 1px solid rgba(255,255,255,.65) !important;
+  }
+
+  /* Other “button-like” UI */
+  .toTop,
+  .back-to-top,
+  #contact .dockBtn{
+    background: rgba(255,255,255,.08) !important;
+    color: rgba(255,255,255,.92) !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+  }
+}
