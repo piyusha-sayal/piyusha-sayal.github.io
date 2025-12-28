@@ -30,6 +30,8 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 
+
+
 /* =========================================================
    ✅ BACKGROUND (continuous glow, no “page break” band)
 ========================================================= */
@@ -716,7 +718,6 @@ a{color:inherit; text-decoration:none}
 
 @media (max-width: 980px){
   .hero__inner{grid-template-columns:1fr; text-align:left}
-  .avatar{justify-content:flex-start}
   .grid2, .contact{grid-template-columns:1fr}
   .skills{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
@@ -1776,7 +1777,8 @@ svg{
   margin-top: 20px;
   padding: 28px 0 32px;
   border-top: 1px solid rgba(255,255,255,.08);
-  background: transparent;   /* ✅ let body drive bg */
+  background: rgba(5,5,5,.35);   /* or var(--bg) */
+  backdrop-filter: blur(12px);  /* ✅ let body drive bg */
   position: relative;
 }
 
@@ -1968,3 +1970,201 @@ svg{
   }
 }
 
+
+@media (max-width: 980px){
+  .card__actions{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__actions .btn{
+    width: min(320px, 100%);
+  }
+}
+
+
+@media (max-width: 980px){
+  #contact .talkBtn{
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 980px){
+
+  /* extra space after Contact section */
+  #contact.section,
+  #contact{
+    padding-bottom: 84px; /* increase/decrease as you like */
+  }
+
+  /* pills layout: 3 per row on phone */
+  .hero__chips{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 18px;
+    margin-bottom: 18px; /* adds space below pills */
+  }
+
+  .hero__chips .chip{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 980px){
+  body{ background-attachment: scroll !important; }
+
+  body::before{
+    content:"";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background: url("../img/noise.png") repeat;
+    background-size: 180px 180px;
+
+    opacity: 0.12;
+    mix-blend-mode: overlay;
+    transform: translateZ(0);
+  }
+
+  .nav,
+  .back-to-top{ z-index: 999999 !important; }
+
+  main, section, header, footer, .container{
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 980px){
+  body{ background-attachment: scroll !important; }
+
+  body::before{
+    content:"";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    /* ✅ seamless procedural noise (no image file) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    opacity: 0.10;            /* try 0.08–0.14 */
+    mix-blend-mode: overlay;  /* or: soft-light */
+    transform: translateZ(0);
+  }
+
+  .nav,
+  .back-to-top{ z-index: 999999 !important; }
+
+  main, section, header, footer, .container{
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* =========================================================
+   PHONE ONLY — remove orange block / glow tile artifacts
+   (does NOT affect laptop)
+========================================================= */
+@media (max-width: 980px){
+
+  /* 1) Mobile browsers sometimes render big gradients as blocks.
+        Simplify the body background only on phone. */
+  body{
+    background:
+      radial-gradient(900px 520px at 18% 10%,  rgba(255,122,24,.16), transparent 62%),
+      radial-gradient(900px 520px at 86% 14%, rgba(255,77,0,.10),  transparent 64%),
+      linear-gradient(180deg, rgba(255,255,255,.02) 0%, transparent 30%, rgba(255,122,24,.02) 70%, transparent 100%),
+      var(--bg) !important;
+    background-attachment: scroll !important;
+  }
+
+  /* 2) backdrop-filter is a common cause of the “orange rectangle” on phones.
+        Disable it ONLY on mobile. */
+  .nav,
+  .card,
+  .achCard,
+  #contact .talkCard,
+  .siteFooter{
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 3) Footer glow sometimes becomes a solid block on phone — reduce it */
+  .siteFooter::before{
+    opacity: .35 !important;   /* was .95 */
+    filter: blur(10px);
+  }
+
+  /* 4) Contact visual glow can also tile — reduce it on phone */
+  #contact .talkVisual::after{
+    opacity: .55 !important;
+    filter: blur(12px) !important;
+  }
+}
+/* =========================================================
+   PHONE ONLY — fix rectangular orange “glow block” under avatar
+   (desktop/laptop untouched)
+========================================================= */
+@media (max-width: 980px){
+
+  /* The main culprit: large blurred shadows + animation on a circle */
+  .avatar__ring{
+    animation: none !important;
+
+    /* reduce heavy glow that becomes a rectangle on mobile */
+    box-shadow:
+      0 0 0 10px rgba(255,122,24,.05),
+      0 18px 55px rgba(0,0,0,.60),
+      0 0 60px rgba(255,122,24,.22) !important;
+  }
+
+  /* Optional: reduce extra processing on the photo */
+  .avatar__disc img{
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+@media (max-width: 980px){
+  .avatar__ring{
+    box-shadow: none !important; /* guaranteed kill-switch */
+  }
+}
+/* =========================================================
+   PHONE ONLY — remove the orange “block” (contact visual blob)
+========================================================= */
+@media (max-width: 980px){
+
+  /* remove the orange block layers */
+  #contact .blob,
+  #contact .talkVisual::before,
+  #contact .talkVisual::after{
+    display: none !important;
+    content: none !important;
+  }
+
+  /* make the visual area not a tall stage */
+  #contact .talkVisual{
+    min-height: auto !important;
+    overflow: visible !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    padding: 10px 0 0 !important;
+  }
+
+  /* keep the photo, but place it normally */
+  #contact .talkImg{
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+}
