@@ -2349,3 +2349,89 @@ svg{
     transform: translateY(1px) !important;
   }
 }
+
+/* =========================
+   MOBILE FIX PACK (phone only)
+   - restores dark premium look
+   - fixes washed-out hero
+   - improves button contrast + spacing
+========================= */
+@media (max-width: 768px) {
+
+  /* 1) Lock a premium dark background on mobile */
+  body {
+    background: #090909 !important;
+    color: rgba(255,255,255,.92) !important;
+  }
+
+  /* If you used body::before for mobile gradients earlier, use THIS instead */
+  body::before{
+    content:"";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(900px 520px at 50% -180px, rgba(255,122,24,.22), transparent 65%),
+      linear-gradient(180deg, #090909 0%, #0b0b0b 45%, #070707 100%);
+  }
+
+  /* 2) Make hero/sections stop inheriting light/grey backgrounds */
+  .hero,
+  .section,
+  .panel,
+  .card,
+  .container,
+  main {
+    background: transparent !important;
+  }
+
+  /* 3) Fix readability: headings + paragraph contrast */
+  .hero h1,
+  .hero .title,
+  .hero .name,
+  h1, h2, h3 {
+    color: rgba(255,255,255,.95) !important;
+  }
+
+  .hero p,
+  .subhead,
+  .muted,
+  p {
+    color: rgba(255,255,255,.72) !important;
+  }
+
+  /* 4) Fix those 3 buttons: make them obviously clickable */
+  .btn,
+  button,
+  .cta,
+  .hero a.btn {
+    background: linear-gradient(180deg, rgba(255,122,24,.95), rgba(255,77,0,.92)) !important;
+    color: #0b0b0b !important;
+    border: 1px solid rgba(255,122,24,.45) !important;
+    box-shadow: 0 16px 40px rgba(0,0,0,.45) !important;
+  }
+
+  /* secondary buttons (View Resume / Contact) if you have a class for them */
+  .btn--ghost,
+  .btn.secondary,
+  .btn-outline {
+    background: rgba(255,255,255,.08) !important;
+    color: rgba(255,255,255,.92) !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+    box-shadow: none !important;
+  }
+
+  /* 5) Mobile spacing + “too grey” header bar fix */
+  header,
+  .navbar,
+  .topbar {
+    background: rgba(10,10,10,.72) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,.10);
+  }
+
+  /* 6) Optional: tighten hero layout so it doesn’t look cramped */
+  .hero {
+    padding-top: 18px !important;
+  }
+}
