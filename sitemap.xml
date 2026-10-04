@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://piyushasayal.com/</loc>
+    <loc>https://www.piyushasayal.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://piyushasayal.com/experience.html</loc>
+    <loc>https://www.piyushasayal.com/experience.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://piyushasayal.com/projects.html</loc>
+    <loc>https://www.piyushasayal.com/projects.html</loc>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/changeguard.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/mylookfit.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/openmontage.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/linkedup.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/coloring-book-factory.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/slatemetric.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/ai-data-investigator.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/pantrychef.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/tech-roadmap.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/minisplit.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.piyushasayal.com/projects/ai-business-os.html</loc>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -140,7 +140,7 @@
   // ✅ Static highlight for dedicated pages
   if (!onIndex) {
     if (page.includes("experience")) setActive("experience");
-    if (page.includes("projects")) setActive("projects");
+    if (page.includes("projects") || location.pathname.includes("/projects/")) setActive("projects");
   }
 
   // ✅ Scroll-based highlight for index (none at top)

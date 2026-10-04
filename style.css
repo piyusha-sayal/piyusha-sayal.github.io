@@ -1293,6 +1293,10 @@ svg{
   filter: brightness(0) invert(1);
 }
 
+.skillIconSvg i{font-size: 22px; color: #fff}
+
+#skills .skillCardX--wide{grid-column: 1 / -1}
+
 .skillText{
   display:flex;
   flex-direction:column;
@@ -2566,4 +2570,179 @@ svg{
     color: rgba(255,255,255,.92) !important;
     border: 1px solid rgba(255,255,255,.14) !important;
   }
+}
+
+/* =========================================================
+   PROJECT GROUPS & STATUS BADGES
+========================================================= */
+
+.projects__group{
+  margin: 34px 0 14px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.projects__group:first-of-type{margin-top: 6px}
+
+.statusBadge{
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--accent);
+  border: 1px solid rgba(255,122,24,.35);
+  background: rgba(255,122,24,.08);
+}
+
+/* =========================================================
+   PROJECT CASE STUDY PAGES
+========================================================= */
+
+.csBack{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-weight: 800;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.csBack:hover{color: var(--accent)}
+
+.csHead{
+  max-width: 860px;
+  margin-bottom: 28px;
+}
+
+.csTitle{
+  margin: 6px 0 10px;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.csSubtitle{
+  margin: 0 0 14px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.csStatus{margin: 0 0 14px; line-height: 1.6}
+.csStatus .statusBadge{margin: 0 8px 0 0}
+
+.csMeta{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin: 0 0 6px;
+}
+
+.csMeta div{
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.03);
+}
+
+.csMeta dt{
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--accent);
+}
+
+.csMeta dd{margin: 4px 0 0; font-size: 14px; line-height: 1.45}
+
+.csBody{
+  max-width: 860px;
+  display: grid;
+  gap: 16px;
+}
+
+.csSection{
+  padding: 20px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+.csSection--lead{
+  border-color: rgba(255,122,24,.30);
+  font-size: 17px;
+}
+
+.csSection h2{margin: 0 0 10px; font-size: 22px; font-weight: 900}
+.csSection h3{margin: 18px 0 6px; font-size: 17px; font-weight: 850}
+.csSection p{margin: 0 0 10px}
+.csSection ul, .csSection ol{margin: 0 0 10px; padding-left: 22px}
+.csSection li{margin: 4px 0}
+.csSection li::marker{color: var(--accent)}
+.csSection strong{color: #fff}
+.csSection code{
+  padding: 1px 6px;
+  border-radius: 6px;
+  font-size: .9em;
+  background: rgba(255,255,255,.08);
+}
+
+.csTable{overflow-x: auto; margin: 6px 0 10px}
+.csTable table{width: 100%; border-collapse: collapse; font-size: 14px}
+.csTable th, .csTable td{
+  padding: 9px 10px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+.csTable th{color: var(--accent); font-weight: 850}
+
+.csFigure{
+  margin: 8px 0 4px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,.25);
+  overflow-x: auto;
+}
+
+.csFigure img{display: block; max-width: 100%; height: auto; margin: 0 auto}
+
+.csPager{
+  max-width: 860px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.csPager__link{
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.csPager__link:hover{border-color: rgba(255,122,24,.30)}
+.csPager__link span{font-size: 12px; font-weight: 700}
+.csPager__link--next{text-align: right}
+
+@media (max-width: 640px){
+  .csSection{padding: 16px}
+  .csSubtitle{font-size: 16px}
+  .csPager{grid-template-columns: 1fr}
+  .csPager__link--next{text-align: left}
+
+  /* keep diagram text legible on phones; the figure scrolls sideways */
+  .csFigure img{max-width: none}
 }

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LinkedUp | Piyusha Sayal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Upload a resume and get a recruiter-ready LinkedIn profile, rewritten section by section for your target role.">
+  <meta name="keywords" content="Next.js, React, TypeScript, Tailwind CSS, AWS Bedrock, Amazon Nova, LLM, prompt engineering, ATS, resume parsing, Cloudflare Workers, D1, R2, Clerk, Razorpay, Upstash Redis, SaaS, career tech, India">
+  <meta name="author" content="Piyusha Sayal">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.piyushasayal.com/projects/linkedup.html" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LinkedUp | Piyusha Sayal">
+  <meta property="og:description" content="Upload a resume and get a recruiter-ready LinkedIn profile, rewritten section by section for your target role.">
+  <meta property="og:url" content="https://www.piyushasayal.com/projects/linkedup.html">
+  <meta property="og:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Piyusha Sayal portfolio cover" />
+  <meta property="og:site_name" content="Piyusha Sayal">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LinkedUp | Piyusha Sayal">
+  <meta name="twitter:description" content="Upload a resume and get a recruiter-ready LinkedIn profile, rewritten section by section for your target role.">
+  <meta name="twitter:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html#top">
+        <img class="brand__logo" src="../assets/img/favicon.png" alt="Logo" />
+        <span class="brand__name">Piyusha <span class="brand__accent">Sayal</span></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" aria-label="Primary">
+        <a class="nav__link" href="../index.html#about" data-nav="about">About</a>
+        <a class="nav__link" href="../index.html#skills" data-nav="skills">Skills</a>
+        <a class="nav__link" href="../experience.html" data-nav="experience">Experience</a>
+        <a class="nav__link" href="../index.html#education" data-nav="education">Education</a>
+        <a class="nav__link" href="../projects.html" data-nav="projects">Projects</a>
+        <a class="nav__link nav__cta" href="../index.html#contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a class="csBack" href="../projects.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All projects</a>
+
+        <header class="csHead">
+          <p class="eyebrow">AI SaaS / Careers</p>
+          <h1 class="csTitle">LinkedUp</h1>
+          <p class="csSubtitle">Upload your resume once, get a recruiter-ready LinkedIn profile</p>
+          <p class="csStatus"><span class="statusBadge">Live</span> <span class="muted">Live, with paid unlock (Razorpay)</span></p>
+          <dl class="csMeta">
+            <div><dt>Type</dt><dd>AI SaaS web app</dd></div>
+            <div><dt>Platform</dt><dd>Web (Next.js), Cloudflare Worker backend</dd></div>
+            <div><dt>Role</dt><dd>Solo developer (design, engineering, AI)</dd></div>
+            <div><dt>Year</dt><dd>2026</dd></div>
+          </dl>
+          <div class="pTags"><span class="pill">Next.js 15</span><span class="pill">React 19</span><span class="pill">TypeScript</span><span class="pill">Tailwind CSS</span><span class="pill">Clerk</span><span class="pill">AWS Bedrock (Amazon Nova)</span><span class="pill">Cloudflare Workers/D1/R2</span><span class="pill">Upstash Redis</span><span class="pill">Razorpay</span></div>
+        </header>
+
+        <article class="csBody">
+        <section class="csSection csSection--lead">
+          <h2>At a glance</h2>
+<p>An AI LinkedIn optimizer. It turns an uploaded resume into rewritten, role-targeted profile sections. It adds ATS-style scoring, keyword gap analysis and AI profile and banner visuals, and is monetised with a ₹99 unlock.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Overview</h2>
+<p>LinkedUp helps job seekers turn the resume they already have into a strong LinkedIn profile. You upload a PDF or DOCX once and set your target role, industry, seniority and tone. LinkedUp then rewrites each profile section (headline, About, experience, skills, certifications, projects), scores the result, shows which keywords are missing, and can generate a profile photo and banner. It is live, with a freemium flow and a ₹99 &quot;generate all&quot; unlock through Razorpay.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The problem</h2>
+<p>Most job seekers have a decent resume but a weak LinkedIn profile. Rewriting each section so it reads well to recruiters, uses the right search keywords for the target role, and matches the right seniority is slow and unclear. Doing it by hand also means guessing which keywords matter.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The solution</h2>
+<ul>
+<li><strong>Resume in, structured profile out.</strong> The resume is parsed and turned into a structured JSON profile by an LLM.</li>
+<li><strong>Section-by-section generation.</strong> Each LinkedIn section is rewritten with role-, seniority- and tone-aware prompts, and any single section can be regenerated without redoing the rest.</li>
+<li><strong>Scoring you can trust.</strong> A deterministic ATS-style scorer is merged with LLM keyword scoring to show matched and missing keywords.</li>
+<li><strong>Visuals in the same flow.</strong> AI profile photo enhancement and a banner generated at LinkedIn&#39;s dimensions.</li>
+<li><strong>Simple, affordable pricing.</strong> A free preview, then a single ₹99 unlock per workspace.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Key features</h2>
+<h3>Intake</h3>
+<ul>
+<li>PDF and DOCX upload, parsed to text and then structured into a JSON profile by AI.</li>
+<li>Duplicate resumes are detected by hash, and files are stored per workspace.</li>
+<li>Target role (required), plus industry, seniority and tone presets.</li>
+</ul>
+<h3>AI section generation</h3>
+<ul>
+<li>Headline, About/summary, experience (rewritten per role), skills, certifications (with issuer recovery and normalisation), projects, banner tagline and positioning advice.</li>
+<li>Per-section regeneration, or the full pipeline in one run.</li>
+</ul>
+<h3>Analysis</h3>
+<ul>
+<li>An ATS score panel that merges a deterministic scorer with LLM keyword scoring.</li>
+<li>Keyword insights (matched vs missing) and an optimisation quality dashboard.</li>
+</ul>
+<h3>Visuals</h3>
+<ul>
+<li>AI profile photo generation and enhancement.</li>
+<li>AI cover/banner generation, resized and cropped to LinkedIn&#39;s dimensions.</li>
+</ul>
+<h3>Account, payments and UX</h3>
+<ul>
+<li>Sign-up and sign-in with Clerk, auto sign-out after inactivity, and a dashboard of saved workspaces.</li>
+<li>Razorpay checkout for the ₹99 unlock, with payment verification, status polling and paid state saved to the account.</li>
+<li>Mobile-responsive UI with toasts, loading states and profile tabs.</li>
+<li>SEO groundwork: sitemap, robots, manifest, Open Graph and Twitter images, and JSON-LD structured data.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>How it works</h2>
+<p>A Next.js App Router application handles the UI, authentication and AI routes. A Cloudflare Worker with D1 (SQLite) and R2 stores workspaces, payment state and resume files. Structuring and generation run on Amazon Nova models through AWS Bedrock: a lighter model structures the resume and a smaller one handles per-section tasks.</p>
+<figure class="csFigure"><img src="../assets/img/projects/linkedup/architecture.svg" alt="LinkedUp architecture diagram" loading="lazy"></figure>        </section>
+
+        <section class="csSection">
+          <h2>Tech stack</h2>
+<div class="csTable"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technologies</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Frontend</td>
+<td>Next.js 15 (App Router), React 19, TypeScript 5, Tailwind CSS 4</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>Clerk</td>
+</tr>
+<tr>
+<td>AI / LLM</td>
+<td>Amazon Nova (Lite + Micro) via AWS Bedrock (OpenAI-compatible client); a custom prompt library and prompt engine</td>
+</tr>
+<tr>
+<td>Images</td>
+<td>GeminiGen API, Hugging Face Inference</td>
+</tr>
+<tr>
+<td>Parsing</td>
+<td>pdf-parse (PDF), mammoth (DOCX)</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Cloudflare Worker (Wrangler), D1 (SQLite), R2 object storage</td>
+</tr>
+<tr>
+<td>Payments</td>
+<td>Razorpay; Upstash Redis for unlock records</td>
+</tr>
+<tr>
+<td>SEO</td>
+<td>Sitemap, robots, manifest, OG/Twitter images, JSON-LD</td>
+</tr>
+<tr>
+<td>Tooling and tests</td>
+<td>ESLint 9, Vitest (worker)</td>
+</tr>
+</tbody></table>
+</div>        </section>
+
+        <section class="csSection">
+          <h2>Engineering highlights</h2>
+<ul>
+<li><strong>Hybrid scoring.</strong> A deterministic ATS scorer is combined with LLM keyword analysis. The result is more stable than a pure-LLM score and still aware of context.</li>
+<li><strong>Prompt engine, not ad-hoc prompts.</strong> A central prompt library and engine produce role-, seniority- and tone-aware prompts for every section, which makes outputs consistent and easy to tune.</li>
+<li><strong>Granular regeneration.</strong> Each section is independent, so users can iterate on one part without spending tokens on the whole profile.</li>
+<li><strong>Cost-aware model routing.</strong> Resume structuring uses a stronger model, while the high-volume section tasks use a smaller, cheaper one.</li>
+<li><strong>Edge backend.</strong> A Cloudflare Worker with D1 and R2 handles workspaces, resume storage and paid state close to users.</li>
+<li><strong>Resume deduplication.</strong> Hash-based dedupe avoids reprocessing the same resume.</li>
+<li><strong>Certification normalisation.</strong> Recovers missing issuer names and normalises certification data that parses messily from resumes.</li>
+<li><strong>End-to-end monetisation.</strong> Order creation, checkout, payment verification, status polling and a stored paid state tie the business model to the product flow.</li>
+<li><strong>SEO-ready from day one.</strong> Structured data and social cards help the landing page get discovered.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Challenges &amp; what I learned</h2>
+<ol>
+<li><strong>Messy resumes.</strong> <em>Challenge:</em> PDFs and DOCX files vary widely, and certifications and dates often parse badly. <em>Approach:</em> an LLM structuring step into a strict JSON profile, plus targeted recovery for certifications. <em>Lesson:</em> a clean intermediate representation makes every downstream step simpler.</li>
+<li><strong>Scores users believe.</strong> <em>Challenge:</em> pure-LLM scores jump around between runs. <em>Approach:</em> merge a deterministic scorer with LLM keyword signals. <em>Lesson:</em> use deterministic methods for anything users compare over time.</li>
+<li><strong>Controlling AI cost.</strong> <em>Challenge:</em> regenerating a whole profile for every tweak is wasteful. <em>Approach:</em> section-level generation, smaller models for high-volume tasks, and resume-hash dedupe. <em>Lesson:</em> product design choices are also cost controls.</li>
+<li><strong>Pricing for India.</strong> <em>Challenge:</em> global tools charge monthly USD subscriptions. <em>Approach:</em> a single low-cost INR unlock through Razorpay. <em>Lesson:</em> local payment rails and price points matter as much as features.</li>
+</ol>
+        </section>
+
+        <section class="csSection">
+          <h2>Status &amp; what's next</h2>
+<ul>
+<li>Live, with the full flow working end to end: upload → context → generate → score → pay to unlock.</li>
+<li>Current engineering focus: modularising the large optimisation page, broader automated tests (unit, API and end-to-end), shared persistence for session results, and observability.</li>
+<li>Planned product features:<ul>
+<li>job-description matching (tailor the profile to a pasted job description);</li>
+<li>A/B variants for headlines;</li>
+<li>LinkedIn post and outreach message generators;</li>
+<li>PDF/DOCX export;</li>
+<li>multi-language output, including Hindi.</li>
+</ul>
+</li>
+<li>Planned growth: tiered plans, international payments, referrals and shareable score cards.</li>
+</ul>
+        </section>
+        </article>
+
+        <nav class="csPager" aria-label="More projects">
+          <a class="csPager__link" href="openmontage.html"><span class="muted">Previous</span>OpenMontage</a>
+          <a class="csPager__link csPager__link--next" href="coloring-book-factory.html"><span class="muted">Next</span>Coloring Book Factory</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+<footer class="siteFooter">
+  <div class="footerInner">
+    <div class="footerLeft">
+      <span class="footerName">Piyusha Sayal | Data Engineer</span>
+    </div>
+
+    <div class="footerCenter">
+      <span>© <span id="year"></span> All rights reserved</span>
+    </div>
+
+    <div class="footerRight">
+      <button class="toTop" type="button" aria-label="Back to top">Back to Top</button>
+    </div>
+  </div>
+</footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>

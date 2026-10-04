@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Data Investigator | Piyusha Sayal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="A data detective that explores a dataset, forms hypotheses and presents explainable, confidence-scored findings you can challenge.">
+  <meta name="keywords" content="`Data Analytics` `Explainable AI` `TypeScript` `Statistics` `Anomaly Detection` `Human-in-the-loop` `Product Design` `Prototype` `BI`">
+  <meta name="author" content="Piyusha Sayal">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.piyushasayal.com/projects/ai-data-investigator.html" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI Data Investigator | Piyusha Sayal">
+  <meta property="og:description" content="A data detective that explores a dataset, forms hypotheses and presents explainable, confidence-scored findings you can challenge.">
+  <meta property="og:url" content="https://www.piyushasayal.com/projects/ai-data-investigator.html">
+  <meta property="og:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Piyusha Sayal portfolio cover" />
+  <meta property="og:site_name" content="Piyusha Sayal">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Data Investigator | Piyusha Sayal">
+  <meta name="twitter:description" content="A data detective that explores a dataset, forms hypotheses and presents explainable, confidence-scored findings you can challenge.">
+  <meta name="twitter:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html#top">
+        <img class="brand__logo" src="../assets/img/favicon.png" alt="Logo" />
+        <span class="brand__name">Piyusha <span class="brand__accent">Sayal</span></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" aria-label="Primary">
+        <a class="nav__link" href="../index.html#about" data-nav="about">About</a>
+        <a class="nav__link" href="../index.html#skills" data-nav="skills">Skills</a>
+        <a class="nav__link" href="../experience.html" data-nav="experience">Experience</a>
+        <a class="nav__link" href="../index.html#education" data-nav="education">Education</a>
+        <a class="nav__link" href="../projects.html" data-nav="projects">Projects</a>
+        <a class="nav__link nav__cta" href="../index.html#contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a class="csBack" href="../projects.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All projects</a>
+
+        <header class="csHead">
+          <p class="eyebrow">Analytics / Explainable insights</p>
+          <h1 class="csTitle">AI Data Investigator</h1>
+          <p class="csSubtitle">A data detective that finds the questions you didn't know to ask</p>
+          <p class="csStatus"><span class="statusBadge">Frontend MVP</span> <span class="muted">Frontend MVP with a deterministic investigation engine; LLM integration planned</span></p>
+          <dl class="csMeta">
+            <div><dt>Type</dt><dd>Analytics product prototype</dd></div>
+            <div><dt>Platform</dt><dd>Web</dd></div>
+            <div><dt>Role</dt><dd>Solo developer (design, engineering, AI)</dd></div>
+            <div><dt>Year</dt><dd>2026</dd></div>
+          </dl>
+          <div class="pTags"><span class="pill">TypeScript</span><span class="pill">Vanilla DOM</span><span class="pill">CSS</span><span class="pill">Node.js</span><span class="pill">node:test</span></div>
+        </header>
+
+        <article class="csBody">
+        <section class="csSection csSection--lead">
+          <h2>At a glance</h2>
+<p>Upload a CSV and the investigator explores it for you. It profiles the data, scores its quality, detects anomalies and correlations, and presents confidence-scored, evidence-backed findings that you can challenge and re-test.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Overview</h2>
+<p>Traditional BI tools answer only the questions users already know to ask, so analysts spend most of their time figuring out <em>where</em> to look. AI Data Investigator flips the model from <strong>query-driven</strong> to <strong>reasoning-driven</strong> analytics.</p>
+<p>It runs a structured investigation, forms findings, backs each one with evidence and a validation query, and keeps the human in charge through a challenge-and-re-analyse loop.</p>
+<p>The current build is a working frontend MVP. Its investigation engine is deterministic and rule-based, which makes it fully explainable and free to run. It is designed so an LLM layer can later handle hypothesis generation and natural-language reasoning, with the rule engine kept as an offline fallback.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The problem</h2>
+<ul>
+<li>Dashboards show <em>what</em> happened, but rarely point to <em>where</em> the interesting story is.</li>
+<li>Non-analysts (founders, ops leads, growth teams) need board-ready answers quickly.</li>
+<li>&quot;AI insights&quot; are often black boxes with no evidence, which makes them hard to trust.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>The solution</h2>
+<p>A goal-driven &quot;mission&quot; system. You pick an objective, and the investigator works through a visible 7-step process:</p>
+<p><strong>profiling → quality scoring → pattern detection → hypothesis generation → query execution → validation → insight generation</strong></p>
+<p>Each finding is typed (anomaly, trend, correlation, risk, opportunity) and comes with:</p>
+<ul>
+<li>a confidence score</li>
+<li>supporting evidence</li>
+<li>a validation query</li>
+<li>a recommended next action</li>
+</ul>
+<p>Users can <strong>challenge</strong> any finding. The engine re-runs the analysis and shows how confidence changed.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Key features</h2>
+<p><strong>Data input &amp; exploration</strong></p>
+<ul>
+<li>CSV upload (file picker and drag-and-drop) plus 3 built-in sample datasets: SaaS Revenue, Commerce Returns and Support Churn</li>
+<li>Column profiling (type, missing values, numeric stats), a column detail view, and a searchable, sortable preview table</li>
+</ul>
+<p><strong>Data quality</strong></p>
+<ul>
+<li>A trust score built from completeness, consistency, uniqueness, validity and anomaly risk, with diagnostics</li>
+</ul>
+<p><strong>Missions (7 modes)</strong></p>
+<ul>
+<li>Revenue leaks, Explain churn, Detect fraud, Audit quality, Growth opportunities, Board report, Compare periods</li>
+</ul>
+<p><strong>Investigation</strong></p>
+<ul>
+<li>A 7-step investigation timeline with a terminal-style log</li>
+<li>Typed insight cards with confidence, evidence, validation query and next action, plus type filters</li>
+</ul>
+<p><strong>Reasoning &amp; collaboration</strong></p>
+<ul>
+<li><em>Evidence Courtroom</em>: causal ranking and a confidence timeline</li>
+<li><em>Experiments</em>: follow-up tests that strengthen or weaken a finding</li>
+<li><em>What-if simulator</em>: apply a percentage change to a column and see the projected impact</li>
+<li><em>Challenge mode</em>: submit an assumption and get a re-analysis stream, a confidence delta and a challenge history</li>
+<li><em>Trust ledger</em>: an audit trail for each finding</li>
+<li>Rule-based &quot;Ask the dataset&quot; Q&amp;A and a text-to-SQL generator</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>An executive summary with recommendations, a text report export, an in-session history, an observability panel, and a light/dark theme</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>How it works</h2>
+<p>The core engine (<code>investigator-core</code>) is a pure TypeScript module. It takes parsed rows and produces profiles, quality scores, statistical findings and mission-specific insights. The UI renders the investigation as a timeline and feeds user challenges back into the engine.</p>
+<figure class="csFigure"><img src="../assets/img/projects/ai-data-investigator/architecture.svg" alt="AI Data Investigator architecture diagram" loading="lazy"></figure>        </section>
+
+        <section class="csSection">
+          <h2>Tech stack</h2>
+<div class="csTable"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technologies</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Language</td>
+<td>TypeScript compiled to ES modules</td>
+</tr>
+<tr>
+<td>Frontend</td>
+<td>Vanilla TypeScript + DOM APIs, custom CSS (light/dark)</td>
+</tr>
+<tr>
+<td>Analytics engine</td>
+<td>Hand-written CSV parser, column profiling, descriptive stats, Pearson correlation, anomaly detection, quality scoring</td>
+</tr>
+<tr>
+<td>Server</td>
+<td>Node.js built-in <code>http</code> static server with a path-traversal guard</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Node built-in test runner (7 passing tests)</td>
+</tr>
+<tr>
+<td>Planned</td>
+<td>React/Next.js, FastAPI + Pandas, DuckDB/Postgres, LLM API with tool calling</td>
+</tr>
+</tbody></table>
+</div>        </section>
+
+        <section class="csSection">
+          <h2>Engineering highlights</h2>
+<ul>
+<li><strong>A dependency-free analytics engine</strong>: CSV parsing, profiling, correlation, anomaly detection and quality scoring written from scratch in TypeScript.</li>
+<li><strong>Explainability by design</strong>: every insight carries evidence, a confidence score and a validation query.</li>
+<li><strong>A human-in-the-loop challenge loop</strong> that re-runs analysis and visualises confidence deltas.</li>
+<li><strong>Goal-driven mission architecture</strong>: 7 analysis modes share one investigation pipeline.</li>
+<li><strong>An AI-ready architecture</strong>: the deterministic engine is designed as the tool layer that a future LLM agent would plan against and call.</li>
+<li><strong>A lightweight static server</strong> with path-traversal protection, and core logic covered by automated tests.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Challenges &amp; what I learned</h2>
+<ol>
+<li><strong>Making insights trustworthy.</strong> <em>Approach:</em> every finding shows its evidence, a validation query and a trust-ledger entry. <em>Lesson:</em> users trust analysis they can check, not analysis that merely sounds confident.</li>
+<li><strong>Keeping humans in control.</strong> <em>Approach:</em> challenge mode and experiments let users push back and watch confidence move. <em>Lesson:</em> collaboration with the user builds more trust than autonomy.</li>
+<li><strong>Building a reasoning UX before adding LLM cost.</strong> <em>Approach:</em> I proved the investigation flow with a deterministic engine first. <em>Lesson:</em> design the tool layer and evidence model first, then plug in a model to plan and narrate.</li>
+<li><strong>Scope.</strong> <em>Approach:</em> I delivered a full end-to-end experience on sample datasets before building a backend. <em>Lesson:</em> a clickable, honest prototype validates the concept faster than infrastructure does.</li>
+</ol>
+        </section>
+
+        <section class="csSection">
+          <h2>Status &amp; what's next</h2>
+<p>A working frontend MVP. Next steps:</p>
+<ul>
+<li>LLM integration for hypothesis generation, natural-language summaries and text-to-SQL, with tool calling against the existing engine and prompt-injection guards on dataset content</li>
+<li>real SQL execution (DuckDB), larger-file support and time-series analysis</li>
+<li>saved and shareable investigations</li>
+</ul>
+<p>The engine is also being adapted as the premium &quot;Investigate&quot; tier of my SlateMetric dashboard.</p>
+        </section>
+        </article>
+
+        <nav class="csPager" aria-label="More projects">
+          <a class="csPager__link" href="slatemetric.html"><span class="muted">Previous</span>SlateMetric</a>
+          <a class="csPager__link csPager__link--next" href="pantrychef.html"><span class="muted">Next</span>PantryChef</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+<footer class="siteFooter">
+  <div class="footerInner">
+    <div class="footerLeft">
+      <span class="footerName">Piyusha Sayal | Data Engineer</span>
+    </div>
+
+    <div class="footerCenter">
+      <span>© <span id="year"></span> All rights reserved</span>
+    </div>
+
+    <div class="footerRight">
+      <button class="toTop" type="button" aria-label="Back to top">Back to Top</button>
+    </div>
+  </div>
+</footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MiniSplit | Piyusha Sayal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Snap a receipt, tap who had what: AI item-level bill splitting with fair tax and tip.">
+  <meta name="keywords" content="`nextjs` `react` `typescript` `tailwindcss` `shadcn-ui` `radix-ui` `zustand` `clerk` `openai` `vision-ai` `ocr` `fintech` `mobile-first` `pwa`">
+  <meta name="author" content="Piyusha Sayal">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.piyushasayal.com/projects/minisplit.html" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="MiniSplit | Piyusha Sayal">
+  <meta property="og:description" content="Snap a receipt, tap who had what: AI item-level bill splitting with fair tax and tip.">
+  <meta property="og:url" content="https://www.piyushasayal.com/projects/minisplit.html">
+  <meta property="og:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Piyusha Sayal portfolio cover" />
+  <meta property="og:site_name" content="Piyusha Sayal">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MiniSplit | Piyusha Sayal">
+  <meta name="twitter:description" content="Snap a receipt, tap who had what: AI item-level bill splitting with fair tax and tip.">
+  <meta name="twitter:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html#top">
+        <img class="brand__logo" src="../assets/img/favicon.png" alt="Logo" />
+        <span class="brand__name">Piyusha <span class="brand__accent">Sayal</span></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" aria-label="Primary">
+        <a class="nav__link" href="../index.html#about" data-nav="about">About</a>
+        <a class="nav__link" href="../index.html#skills" data-nav="skills">Skills</a>
+        <a class="nav__link" href="../experience.html" data-nav="experience">Experience</a>
+        <a class="nav__link" href="../index.html#education" data-nav="education">Education</a>
+        <a class="nav__link" href="../projects.html" data-nav="projects">Projects</a>
+        <a class="nav__link nav__cta" href="../index.html#contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a class="csBack" href="../projects.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All projects</a>
+
+        <header class="csHead">
+          <p class="eyebrow">Consumer web app / Fintech</p>
+          <h1 class="csTitle">MiniSplit</h1>
+          <p class="csSubtitle">Snap the receipt, split it fairly, settle it later</p>
+          <p class="csStatus"><span class="statusBadge">Early MVP</span> <span class="muted">Early MVP / prototype in active development</span></p>
+          <dl class="csMeta">
+            <div><dt>Type</dt><dd>Mobile-first web app</dd></div>
+            <div><dt>Platform</dt><dd>Web (mobile-first)</dd></div>
+            <div><dt>Role</dt><dd>Solo developer (design, engineering, AI)</dd></div>
+            <div><dt>Year</dt><dd>2026</dd></div>
+          </dl>
+          <div class="pTags"><span class="pill">Next.js 16</span><span class="pill">React 19</span><span class="pill">TypeScript</span><span class="pill">Tailwind CSS v4</span><span class="pill">shadcn/ui</span><span class="pill">Zustand</span><span class="pill">Clerk</span><span class="pill">OpenAI vision</span></div>
+        </header>
+
+        <article class="csBody">
+        <section class="csSection csSection--lead">
+          <h2>At a glance</h2>
+<p>A receipt-splitting app. Photograph a bill, AI extracts the line items, you assign items to people, and MiniSplit splits tax and tip fairly, produces a shareable breakdown and tracks who owes whom.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Overview</h2>
+<p>MiniSplit is a mobile-first web app for friends, roommates, coworkers and travel groups who share meals and expenses. Instead of typing every expense by hand, you take a photo of the receipt. A vision model reads the line items, and the app works out each person&#39;s exact share, including their proportional part of tax and tip.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The problem</h2>
+<p>Splitting a group bill is tedious and error-prone. Someone has to read the receipt, remember who ordered what, divide shared dishes, and then apply tax and tip fairly. Splitting evenly is quick but unfair, and typing every item into an expense app is fair but slow. Afterwards, someone still has to remember who has paid back and who hasn&#39;t.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The solution</h2>
+<p>MiniSplit uses <strong>item-level splitting driven by AI receipt scanning</strong>. You upload a photo and review the extracted items. Then you add people, tap to assign items (shared items split automatically), and choose who paid. The app calculates each person&#39;s total with tax and tip distributed in proportion to what they ordered. The result can be copied, shared through the native share sheet or sent as a link, and running balances are tracked per friend.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Key features</h2>
+<ul>
+<li><strong>Receipt upload</strong> (JPEG, PNG, WEBP or PDF) with type and size validation</li>
+<li><strong>AI extraction</strong> of line items, quantities, prices, tax, tip and total using a vision model</li>
+<li><strong>Manual-entry fallback</strong> when a receipt can&#39;t be read, so the flow never dead-ends</li>
+<li><strong>Edit and verify</strong> screen to fix, add or remove extracted items</li>
+<li><strong>Item assignment:</strong> add participants, assign items, split shared items evenly, with quantity-aware pricing</li>
+<li><strong>Proportional tax and tip:</strong> each person pays tax and tip in proportion to their subtotal</li>
+<li><strong>Payer selection</strong> and a <strong>per-person breakdown</strong></li>
+<li><strong>Share:</strong> copy a summary, use the native share sheet, or send a public share page</li>
+<li><strong>Bill history</strong> and <strong>friend balances</strong> with a settle-up action</li>
+<li><strong>Mobile-first UI:</strong> bottom navigation, toasts, and Material Design 3 color tokens</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>How it works</h2>
+<p>The upload endpoint sends the image to a vision model with a structured-extraction prompt and gets back line items, tax, tip and total. The user can correct the result. Assignment state lives in a Zustand store. A pure calculation module (<code>calculateTotals</code>) computes subtotals per person, splits shared items, and distributes tax and tip in proportion. Finished bills go into history, and balances are derived from who paid and who owes.</p>
+<figure class="csFigure"><img src="../assets/img/projects/minisplit/architecture.svg" alt="MiniSplit architecture diagram" loading="lazy"></figure>        </section>
+
+        <section class="csSection">
+          <h2>Tech stack</h2>
+<div class="csTable"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Framework</td>
+<td>Next.js 16 (App Router, Turbopack), React 19, TypeScript 5</td>
+</tr>
+<tr>
+<td>Styling</td>
+<td>Tailwind CSS v4, Material Design 3 tokens, Material Symbols, lucide-react</td>
+</tr>
+<tr>
+<td>UI kit</td>
+<td>shadcn/ui pattern on Radix UI, class-variance-authority, clsx, tailwind-merge</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Zustand 5 (receipt store + persisted history store)</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>Clerk (middleware-protected routes)</td>
+</tr>
+<tr>
+<td>AI / OCR</td>
+<td>OpenAI vision model (gpt-4o-mini) for structured receipt extraction</td>
+</tr>
+<tr>
+<td>Planned infrastructure</td>
+<td>Cloudflare Pages, D1 (SQL) and R2 (object storage)</td>
+</tr>
+<tr>
+<td>Tooling</td>
+<td>ESLint 9, PostCSS</td>
+</tr>
+</tbody></table>
+</div>        </section>
+
+        <section class="csSection">
+          <h2>Engineering highlights</h2>
+<ul>
+<li><strong>Fair-share math as a pure module.</strong> Tax and tip are split in proportion to each person&#39;s subtotal, with correct handling of quantities and shared items. Keeping it as a pure function makes it easy to test and reuse on the result and share pages.</li>
+<li><strong>AI with a safety net.</strong> Extraction returns structured data, the user always reviews it before splitting, and a manual path takes over when the model can&#39;t read a receipt.</li>
+<li><strong>Mobile-first interaction design.</strong> The flow is short and tap-friendly (upload → verify → assign → result), with bottom navigation and the native Web Share API.</li>
+<li><strong>Composable UI.</strong> Accessible Radix primitives use the shadcn/ui pattern, with Material Design 3 color tokens for a consistent look.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Challenges &amp; what I learned</h2>
+<ul>
+<li><strong>Receipts are messy.</strong> Receipts vary widely in layout, abbreviations and quality. Asking for structured output, always letting the user verify it, and keeping a manual fallback made the feature dependable.</li>
+<li><strong>&quot;Fair&quot; needs a precise definition.</strong> Proportional tax and tip, even splits of shared items, and quantity-aware pricing all needed careful rounding rules. That made a strong case for keeping the calculation logic isolated and testable.</li>
+<li><strong>From device-local to multi-user.</strong> Local history works well for one person. Shared links and balances across devices mean moving to a real database with stable identities for each person. That work is under way.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Status &amp; what's next</h2>
+<p>MiniSplit is an early MVP in active development. The core flow works end to end: scan, verify, assign, calculate and share. In progress and planned:</p>
+<ul>
+<li>Cloud persistence for receipts and balances per account, with sync across devices</li>
+<li><strong>Groups</strong> such as &quot;Trip to Goa&quot; or &quot;Flatmates&quot;, each with a shared ledger</li>
+<li>Settlement between two specific people and partial payments</li>
+<li>Debt simplification to minimize the number of transfers</li>
+<li>Uneven splits by percentage, shares or fixed amounts</li>
+<li>Multi-currency</li>
+<li>UPI, Venmo and PayPal &quot;pay now&quot; links</li>
+<li>Letting friends claim their own items from a share link</li>
+<li>PWA install and camera-first capture</li>
+<li>Confidence highlighting for low-certainty extracted lines</li>
+</ul>
+        </section>
+        </article>
+
+        <nav class="csPager" aria-label="More projects">
+          <a class="csPager__link" href="tech-roadmap.html"><span class="muted">Previous</span>Career Learning OS</a>
+          <a class="csPager__link csPager__link--next" href="ai-business-os.html"><span class="muted">Next</span>AI Business OS</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+<footer class="siteFooter">
+  <div class="footerInner">
+    <div class="footerLeft">
+      <span class="footerName">Piyusha Sayal | Data Engineer</span>
+    </div>
+
+    <div class="footerCenter">
+      <span>© <span id="year"></span> All rights reserved</span>
+    </div>
+
+    <div class="footerRight">
+      <button class="toTop" type="button" aria-label="Back to top">Back to Top</button>
+    </div>
+  </div>
+</footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>

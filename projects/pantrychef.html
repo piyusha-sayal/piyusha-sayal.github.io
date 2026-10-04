@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PantryChef | Piyusha Sayal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Cook with what you already have: pantry-first recipe matching, camera input and a shopping list that closes the loop.">
+  <meta name="keywords" content="`Mobile` `React Native` `Expo` `TypeScript` `Firebase` `Cloudflare Workers` `AI Vision` `Claude` `Food Tech` `Consumer App` `Sustainability`">
+  <meta name="author" content="Piyusha Sayal">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.piyushasayal.com/projects/pantrychef.html" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PantryChef | Piyusha Sayal">
+  <meta property="og:description" content="Cook with what you already have: pantry-first recipe matching, camera input and a shopping list that closes the loop.">
+  <meta property="og:url" content="https://www.piyushasayal.com/projects/pantrychef.html">
+  <meta property="og:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Piyusha Sayal portfolio cover" />
+  <meta property="og:site_name" content="Piyusha Sayal">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PantryChef | Piyusha Sayal">
+  <meta name="twitter:description" content="Cook with what you already have: pantry-first recipe matching, camera input and a shopping list that closes the loop.">
+  <meta name="twitter:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html#top">
+        <img class="brand__logo" src="../assets/img/favicon.png" alt="Logo" />
+        <span class="brand__name">Piyusha <span class="brand__accent">Sayal</span></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" aria-label="Primary">
+        <a class="nav__link" href="../index.html#about" data-nav="about">About</a>
+        <a class="nav__link" href="../index.html#skills" data-nav="skills">Skills</a>
+        <a class="nav__link" href="../experience.html" data-nav="experience">Experience</a>
+        <a class="nav__link" href="../index.html#education" data-nav="education">Education</a>
+        <a class="nav__link" href="../projects.html" data-nav="projects">Projects</a>
+        <a class="nav__link nav__cta" href="../index.html#contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a class="csBack" href="../projects.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All projects</a>
+
+        <header class="csHead">
+          <p class="eyebrow">Consumer mobile / Food</p>
+          <h1 class="csTitle">PantryChef</h1>
+          <p class="csSubtitle">Cook with what you already have</p>
+          <p class="csStatus"><span class="statusBadge">MVP · pre-release</span> <span class="muted">Feature-rich MVP in development (pre-release)</span></p>
+          <dl class="csMeta">
+            <div><dt>Type</dt><dd>Consumer mobile app</dd></div>
+            <div><dt>Platform</dt><dd>iOS/Android (Expo React Native) + Web</dd></div>
+            <div><dt>Role</dt><dd>Solo developer (design, engineering, AI)</dd></div>
+            <div><dt>Year</dt><dd>2026</dd></div>
+          </dl>
+          <div class="pTags"><span class="pill">Expo</span><span class="pill">React Native</span><span class="pill">TypeScript</span><span class="pill">Firebase</span><span class="pill">React Query</span><span class="pill">Zustand</span><span class="pill">Claude API</span><span class="pill">React + Vite (web)</span><span class="pill">Cloudflare Workers + D1</span></div>
+        </header>
+
+        <article class="csBody">
+        <section class="csSection csSection--lead">
+          <h2>At a glance</h2>
+<p>A pantry-first cooking app. Keep a live pantry, see which of about 9,000 recipes you can cook right now, fill the gaps with a smart shopping list, and cook hands-free with step-by-step Cook Mode.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Overview</h2>
+<p>People waste food and money because they don&#39;t know what to make with what&#39;s already in the kitchen. PantryChef starts from the pantry, not the recipe. It scores every recipe by how much of it you can already make, so &quot;You can make now&quot; and &quot;Almost there&quot; suggestions appear at the top.</p>
+<p>The app combines camera-first input (barcode scanning and AI fridge photo scanning), AI recipe generation, meal planning and grocery tracking in one mobile experience. It spans three codebases:</p>
+<ul>
+<li>an Expo React Native mobile app (the primary product)</li>
+<li>a React/Vite web app</li>
+<li>a Cloudflare Worker + D1 backend</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>The problem</h2>
+<ul>
+<li>Recipe apps start from recipes, but real life starts from ingredients that are about to expire.</li>
+<li>Typing in pantry contents is tedious, so most pantry apps get abandoned.</li>
+<li>Shopping lists, meal plans and recipes usually live in separate apps.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>The solution</h2>
+<p>A single core loop:</p>
+<p><strong>add pantry items → see &quot;You can make now&quot; / &quot;Almost there&quot; → cook in Cook Mode → missing items go to the shopping list → bought items move back to the pantry</strong></p>
+<p>Camera-first input keeps setup to seconds, and AI fills the gaps when no catalog recipe fits.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Key features</h2>
+<p><strong>Pantry</strong></p>
+<ul>
+<li>Add, edit and delete items with auto-category inference, filters, search and swipe-to-delete</li>
+<li>Duplicate prevention and pantry diversity stats</li>
+<li>Barcode scanning via Open Food Facts, and <strong>AI fridge photo scanning</strong></li>
+</ul>
+<p><strong>Recipes</strong></p>
+<ul>
+<li>An approximately 9,000-recipe catalog with search, cuisine and dietary filters, and inferred difficulty</li>
+<li>A <strong>pantry match %</strong> on every recipe</li>
+<li>Recipe detail with servings scaling, have/missing ingredients, nutrition cards, and reviews and ratings</li>
+<li>Ingredient substitutions, seasonal suggestions, Recipe Roulette and a Leftover Finder</li>
+<li>Create a recipe, import from a URL, or <strong>generate a recipe with AI</strong> from what&#39;s on hand</li>
+</ul>
+<p><strong>Cooking</strong></p>
+<ul>
+<li><strong>Cook Mode</strong>: step-by-step instructions with keep-awake and text-to-speech</li>
+</ul>
+<p><strong>Planning &amp; shopping</strong></p>
+<ul>
+<li>A shopping list that adds missing ingredients and moves bought items back to the pantry</li>
+<li>A meal planner and a grocery spend tracker</li>
+</ul>
+<p><strong>Engagement</strong></p>
+<ul>
+<li>Favorites, collections, challenges, a social feed, analytics, nutrition goals and local notifications</li>
+</ul>
+<p><strong>Account</strong></p>
+<ul>
+<li>Email/password and Google sign-in, onboarding with pantry setup, dark theme and i18n scaffolding</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>How it works</h2>
+<p>The mobile app uses Firebase Auth and Firestore for user data, TanStack Query for server state, and Zustand for local state. A recipe engine computes a match score for each recipe against the user&#39;s pantry. AI features use Claude models for fridge-image recognition and recipe generation. A separate import pipeline normalised and deduplicated the recipe dataset into SQL batches.</p>
+<figure class="csFigure"><img src="../assets/img/projects/pantrychef/architecture.svg" alt="PantryChef architecture diagram" loading="lazy"></figure>        </section>
+
+        <section class="csSection">
+          <h2>Tech stack</h2>
+<div class="csTable"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technologies</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile</td>
+<td>Expo SDK 54, React Native 0.81, React 19, TypeScript 5.9</td>
+</tr>
+<tr>
+<td>Navigation &amp; state</td>
+<td>React Navigation 7, Zustand 5, TanStack React Query 5, React Hook Form + Zod</td>
+</tr>
+<tr>
+<td>Device features</td>
+<td>expo-camera, image-picker, notifications, speech, keep-awake, haptics, secure-store</td>
+</tr>
+<tr>
+<td>Mobile data</td>
+<td>Firebase Auth, Firestore, Storage; Google sign-in</td>
+</tr>
+<tr>
+<td>AI &amp; data APIs</td>
+<td>Anthropic Claude (Haiku 4.5) for fridge scan and recipe generation; Open Food Facts</td>
+</tr>
+<tr>
+<td>Web</td>
+<td>React 18, Vite 7, Tailwind, shadcn/ui, Framer Motion, Recharts, Tesseract.js OCR</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Cloudflare Workers (TypeScript), D1 SQLite, Wrangler</td>
+</tr>
+<tr>
+<td>Data pipeline</td>
+<td>Recipe dataset import scripts (~9.7k raw → ~9k deduplicated, chunked SQL batches)</td>
+</tr>
+<tr>
+<td>Testing (web)</td>
+<td>Vitest, Playwright</td>
+</tr>
+</tbody></table>
+</div>        </section>
+
+        <section class="csSection">
+          <h2>Engineering highlights</h2>
+<ul>
+<li><strong>A pantry-match recipe engine</strong> that scores about 9,000 recipes against a live pantry to power the &quot;cook now&quot; and &quot;almost there&quot; ranking.</li>
+<li><strong>Camera-first input</strong>: barcode lookups plus AI vision fridge scanning, cutting pantry setup from minutes to seconds.</li>
+<li><strong>28 mobile screens</strong>, from onboarding and Cook Mode to meal planning, analytics and social.</li>
+<li><strong>A three-surface architecture</strong> (mobile, web, edge backend), including a Cloudflare Worker REST API with auth, pantry, shopping, favorites, reviews and recipe search routes.</li>
+<li><strong>A data engineering pipeline</strong> that deduplicated the recipe dataset, inferred difficulty and imported it in chunked SQL batches.</li>
+<li><strong>Accessible cooking UX</strong>: text-to-speech steps, keep-awake and haptics for hands-busy moments.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Challenges &amp; what I learned</h2>
+<ol>
+<li><strong>Ranking recipes by what you have.</strong> <em>Approach:</em> a match-score engine with have/missing breakdowns and &quot;almost there&quot; thresholds. <em>Lesson:</em> a simple, transparent score beats a clever but opaque one for everyday decisions.</li>
+<li><strong>Reducing input friction.</strong> <em>Approach:</em> barcode scanning, AI fridge photos and auto-categorisation. <em>Lesson:</em> in consumer apps, setup effort decides retention.</li>
+<li><strong>Porting from web to native.</strong> <em>Approach:</em> I used the complete web app as the reference implementation for the React Native build. <em>Lesson:</em> a reference implementation speeds up porting but needs a clear source of truth for data and APIs.</li>
+<li><strong>Choosing the backend.</strong> <em>Approach:</em> I moved the mobile data layer to Firebase for auth and real-time sync, while the Worker serves the web app, and I&#39;m now consolidating on one backend. <em>Lesson:</em> decide the data architecture early; two backends double the maintenance.</li>
+</ol>
+        </section>
+
+        <section class="csSection">
+          <h2>Status &amp; what's next</h2>
+<p>A feature-rich MVP running in Expo development, now being hardened for release. Next steps:</p>
+<ul>
+<li>route all AI calls through a server-side proxy</li>
+<li>consolidate on one backend</li>
+<li>add automated mobile tests and crash reporting</li>
+<li>prepare EAS builds for store testing</li>
+</ul>
+<p>Planned features include expiry-date reminders with &quot;use it up&quot; recipes, a shared household pantry, receipt scanning and an auto-generated weekly meal plan.</p>
+        </section>
+        </article>
+
+        <nav class="csPager" aria-label="More projects">
+          <a class="csPager__link" href="ai-data-investigator.html"><span class="muted">Previous</span>AI Data Investigator</a>
+          <a class="csPager__link csPager__link--next" href="tech-roadmap.html"><span class="muted">Next</span>Career Learning OS</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+<footer class="siteFooter">
+  <div class="footerInner">
+    <div class="footerLeft">
+      <span class="footerName">Piyusha Sayal | Data Engineer</span>
+    </div>
+
+    <div class="footerCenter">
+      <span>© <span id="year"></span> All rights reserved</span>
+    </div>
+
+    <div class="footerRight">
+      <button class="toTop" type="button" aria-label="Back to top">Back to Top</button>
+    </div>
+  </div>
+</footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>

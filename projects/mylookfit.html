@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyLookFit | Piyusha Sayal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="A non-judgemental AI personal stylist: colours, hair, makeup, accessories and complete looks from one selfie.">
+  <meta name="keywords" content="React Native, Expo, TypeScript, FastAPI, Python, MediaPipe, OpenCV, computer vision, explainable AI, rule engines, personal styling, color analysis, privacy by design, accessibility, Postgres, Firebase Auth, mobile app, consumer AI">
+  <meta name="author" content="Piyusha Sayal">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.piyushasayal.com/projects/mylookfit.html" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="MyLookFit | Piyusha Sayal">
+  <meta property="og:description" content="A non-judgemental AI personal stylist: colours, hair, makeup, accessories and complete looks from one selfie.">
+  <meta property="og:url" content="https://www.piyushasayal.com/projects/mylookfit.html">
+  <meta property="og:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Piyusha Sayal portfolio cover" />
+  <meta property="og:site_name" content="Piyusha Sayal">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MyLookFit | Piyusha Sayal">
+  <meta name="twitter:description" content="A non-judgemental AI personal stylist: colours, hair, makeup, accessories and complete looks from one selfie.">
+  <meta name="twitter:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html#top">
+        <img class="brand__logo" src="../assets/img/favicon.png" alt="Logo" />
+        <span class="brand__name">Piyusha <span class="brand__accent">Sayal</span></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" aria-label="Primary">
+        <a class="nav__link" href="../index.html#about" data-nav="about">About</a>
+        <a class="nav__link" href="../index.html#skills" data-nav="skills">Skills</a>
+        <a class="nav__link" href="../experience.html" data-nav="experience">Experience</a>
+        <a class="nav__link" href="../index.html#education" data-nav="education">Education</a>
+        <a class="nav__link" href="../projects.html" data-nav="projects">Projects</a>
+        <a class="nav__link nav__cta" href="../index.html#contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a class="csBack" href="../projects.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All projects</a>
+
+        <header class="csHead">
+          <p class="eyebrow">Consumer mobile / Computer vision</p>
+          <h1 class="csTitle">MyLookFit</h1>
+          <p class="csSubtitle">An AI personal stylist that answers &quot;What suits me?&quot;, never &quot;What's wrong with me?&quot;</p>
+          <p class="csStatus"><span class="statusBadge">Release candidate</span> <span class="muted">Release candidate (feature-complete v1, live backend, not yet on the Play Store)</span></p>
+          <dl class="csMeta">
+            <div><dt>Type</dt><dd>Consumer mobile app + ML backend</dd></div>
+            <div><dt>Platform</dt><dd>Android (Expo / React Native) + FastAPI</dd></div>
+            <div><dt>Role</dt><dd>Solo developer (design, engineering, AI)</dd></div>
+            <div><dt>Year</dt><dd>2026</dd></div>
+          </dl>
+          <div class="pTags"><span class="pill">Expo</span><span class="pill">React Native</span><span class="pill">TypeScript</span><span class="pill">FastAPI</span><span class="pill">Python</span><span class="pill">MediaPipe</span><span class="pill">OpenCV</span><span class="pill">PostgreSQL (Neon)</span><span class="pill">Firebase Auth</span></div>
+        </header>
+
+        <article class="csBody">
+        <section class="csSection csSection--lead">
+          <h2>At a glance</h2>
+<p>A selfie plus a short questionnaire gives you personalised colours, hairstyles, makeup, accessories, outfits and complete looks. It never scores or judges appearance, keeps privacy first, costs nothing per request to run, and covers both global and Indian fashion.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Overview</h2>
+<p>MyLookFit is an AI personal stylist for Android. From a selfie and a few questions, it works out face shape, facial features, skin undertone, contrast and a 12-season colour profile. It then composes recommendations across colours, hair, makeup, accessories and outfits. Every recommendation explains its basis. The whole system runs on free, on-device-class ML (MediaPipe + OpenCV) and deterministic styling rules, so each analysis costs nothing to serve.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The problem</h2>
+<p>People want personal styling advice (which colours, haircuts, glasses or outfits suit them) but stylists are expensive, and most &quot;AI beauty&quot; apps do two things wrong:</p>
+<ol>
+<li><strong>They judge.</strong> Attractiveness scores and &quot;flaw&quot; labels make people feel worse rather than helping them decide.</li>
+<li><strong>They&#39;re opaque and costly.</strong> Recommendations come from black-box models with per-request AI costs, no explanation, and unclear handling of very personal face photos.</li>
+</ol>
+<p>On top of that, most styling apps ignore Indian fashion (sarees, sharara and other ethnic wear), even though it matters to a large audience.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The solution</h2>
+<p>MyLookFit is built on four principles:</p>
+<ul>
+<li><strong>Enhancement, never judgement.</strong> There are no ratings or good/bad labels. The app answers &quot;What suits me?&quot;</li>
+<li><strong>Deterministic, explainable rules.</strong> Styling engines are pure Python rule systems, so every result can say what was measured, what was derived, and what the user told us.</li>
+<li><strong>Privacy first.</strong> Photos are not kept by default. Consent, data export and account deletion are built in. Body styling is questionnaire-only; no body photos are requested or analysed.</li>
+<li><strong>Zero per-request AI cost.</strong> Analysis uses MediaPipe and OpenCV. An optional text layer (Gemini/Groq) can rephrase or chat, but the app works fully without any AI key.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Key features</h2>
+<h3>Scan and analysis</h3>
+<ul>
+<li>Selfie upload with cropping, asynchronous analysis and progress polling.</li>
+<li>A photo-quality and pose gate with retake prompts, and graceful handling when no face is detected.</li>
+<li>Face shape (a 9-shape classifier), facial features (eyes, brows, lips, cheeks), skin, hair texture, undertone and contrast.</li>
+<li>Results can be combined across multiple photos. An annotated overlay, a PDF report and a shareable summary card are available.</li>
+</ul>
+<h3>Discover My Colors</h3>
+<ul>
+<li>A 12-season colour engine and colour report.</li>
+<li>Explorers for palette, clothing, outfits, hair colour, jewellery metals, lipstick, blush and eyeshadow.</li>
+</ul>
+<h3>Face, Hair, Makeup and Accessories studios</h3>
+<ul>
+<li>Hair Studio: cuts, fringes, parting, colour and salon notes, with distinct hairstyle silhouettes.</li>
+<li>Makeup Studio with complete looks and diagrams.</li>
+<li>Accessories by category (glasses, jewellery and more).</li>
+</ul>
+<h3>Discover My Style</h3>
+<ul>
+<li>Style questionnaire with a self-selected body type (no body photos).</li>
+<li>Aesthetics, silhouettes, outfits and wardrobe guidance, drawn from a combined global and Indian fashion library.</li>
+</ul>
+<h3>Create My Look</h3>
+<ul>
+<li>Composes a complete look from every engine.</li>
+<li>Swap one component without changing the rest, compare looks, and save and reopen them.</li>
+<li>Every explanation names its basis.</li>
+</ul>
+<h3>Beauty Passport, Academy and AI Stylist</h3>
+<ul>
+<li>Beauty Passport profile summary, Vibe Profile and a personal Action Plan.</li>
+<li>Academy guides with progress saved to the account.</li>
+<li>An AI Stylist chat that works offline with rule-based hints and gets richer when an optional LLM provider is configured.</li>
+</ul>
+<h3>Account, privacy and accessibility</h3>
+<ul>
+<li>Email and Google sign-in, session restore, and biometric (fingerprint/face) unlock.</li>
+<li>Photo consent, retention off by default, data export and account deletion.</li>
+<li>Screen-reader live-region announcements, colour never used as the only signal, and minimum touch-target sizes.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>How it works</h2>
+<p>The mobile app uploads a selfie to a FastAPI backend. There, MediaPipe and OpenCV extract facial landmarks and colour measurements, and a set of rule engines turns those measurements plus the questionnaire answers into recommendations.</p>
+<figure class="csFigure"><img src="../assets/img/projects/mylookfit/architecture.svg" alt="MyLookFit architecture diagram" loading="lazy"></figure>        </section>
+
+        <section class="csSection">
+          <h2>Tech stack</h2>
+<div class="csTable"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technologies</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile</td>
+<td>Expo SDK 54, React Native 0.81, React 19, TypeScript, expo-router, Zustand, TanStack React Query, NativeWind, Reanimated 4, expo-local-authentication</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Python 3.12, FastAPI, async SQLAlchemy, Alembic, Pydantic</td>
+</tr>
+<tr>
+<td>ML and vision</td>
+<td>MediaPipe (face mesh, pose), OpenCV, NumPy</td>
+</tr>
+<tr>
+<td>Styling logic</td>
+<td>Pure-Python rule engines (colour season, face shape, hair, makeup, accessories, fashion, outfit, look composer)</td>
+</tr>
+<tr>
+<td>Optional AI text</td>
+<td>Gemini / Groq (chat and rephrasing; not required)</td>
+</tr>
+<tr>
+<td>Data and auth</td>
+<td>Neon Postgres, Firebase Authentication (email + Google) verified server-side</td>
+</tr>
+<tr>
+<td>Outputs</td>
+<td>Server-side PDF reports and PNG summary cards</td>
+</tr>
+<tr>
+<td>Infra and build</td>
+<td>Docker on Render, EAS Build (Android APK)</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>pytest (461 backend tests), Jest (406 mobile tests across 28 suites)</td>
+</tr>
+</tbody></table>
+</div>        </section>
+
+        <section class="csSection">
+          <h2>Engineering highlights</h2>
+<ul>
+<li><strong>Heavily tested.</strong> 461 backend tests and 406 mobile tests pass, with clean TypeScript and ESLint. Scripted production journeys cover privacy, consent, settings, Create My Look and onboarding.</li>
+<li><strong>Explainable by design.</strong> The rule engines return reasons alongside results, so every recommendation can say whether it was measured, derived or self-reported.</li>
+<li><strong>Zero marginal AI cost.</strong> Using free vision libraries and deterministic rules instead of paid model calls means analysis costs nothing to serve and behaves predictably.</li>
+<li><strong>Privacy as architecture.</strong> Photos are analysed in memory and not retained by default. Consent, data export and account deletion are first-class, tested flows.</li>
+<li><strong>Resilient cold starts.</strong> The app launches without blocking: a 5-second server timeout, a &quot;waking up&quot; screen while the backend spins up, a splash screen that can&#39;t hang on a font failure, and a home screen that paints from cache when offline.</li>
+<li><strong>Caching and aggregation.</strong> Image-hash caching avoids repeat analysis, and results can be aggregated across several photos.</li>
+<li><strong>Accessible UI.</strong> Live-region announcements, redundant (non-colour) signals and minimum touch targets are built into nine shared UI primitives with light and dark theming.</li>
+<li><strong>Inclusive content.</strong> A single fashion library covers both global and Indian ethnic wear.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Challenges &amp; what I learned</h2>
+<ol>
+<li><strong>Helpful without harm.</strong> <em>Challenge:</em> beauty tech easily slides into judgement. <em>Approach:</em> the product language and data model have no scores, only compatibility and enhancement, and visuals are labelled as inspiration. <em>Lesson:</em> ethical constraints work best when they are designed into the data model, not added as copy afterwards.</li>
+<li><strong>Trustworthy results from free ML.</strong> <em>Challenge:</em> colour and face analysis is sensitive to lighting and pose. <em>Approach:</em> a quality and pose gate with retake prompts, multi-photo aggregation, and results that are honest about their confidence. <em>Lesson:</em> input quality control beats a bigger model.</li>
+<li><strong>Free-tier infrastructure that feels fast.</strong> <em>Challenge:</em> free hosting sleeps when idle, so the first request after idle is slow. <em>Approach:</em> a non-blocking launch, a timeout with a friendly waking screen, and cache-first rendering. <em>Lesson:</em> good UX can hide infrastructure constraints without lying about them.</li>
+<li><strong>Privacy you can prove.</strong> <em>Challenge:</em> face photos are among the most sensitive personal data. <em>Approach:</em> no retention by default, explicit consent, and tested export and delete paths. <em>Lesson:</em> privacy features need the same test coverage as core features.</li>
+</ol>
+        </section>
+
+        <section class="csSection">
+          <h2>Status &amp; what's next</h2>
+<ul>
+<li>Feature-complete v1. The production API is live and Android builds are produced through EAS.</li>
+<li>Release-candidate testing is in progress: physical-device and screen-reader passes, then the Play Store listing.</li>
+<li>Planned next:<ul>
+<li>a premium full report and subscription;</li>
+<li>an occasion planner (weddings, office, festivals);</li>
+<li>a digital closet matched to your palette;</li>
+<li>regional language support (including Hindi);</li>
+<li>on-device virtual try-on for hair colour and glasses.</li>
+</ul>
+</li>
+</ul>
+        </section>
+        </article>
+
+        <nav class="csPager" aria-label="More projects">
+          <a class="csPager__link" href="changeguard.html"><span class="muted">Previous</span>ChangeGuard</a>
+          <a class="csPager__link csPager__link--next" href="openmontage.html"><span class="muted">Next</span>OpenMontage</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+<footer class="siteFooter">
+  <div class="footerInner">
+    <div class="footerLeft">
+      <span class="footerName">Piyusha Sayal | Data Engineer</span>
+    </div>
+
+    <div class="footerCenter">
+      <span>© <span id="year"></span> All rights reserved</span>
+    </div>
+
+    <div class="footerRight">
+      <button class="toTop" type="button" aria-label="Back to top">Back to Top</button>
+    </div>
+  </div>
+</footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>

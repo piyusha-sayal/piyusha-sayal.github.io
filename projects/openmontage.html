@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenMontage | Piyusha Sayal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Open-source agentic video production: one command turns a topic into a researched, narrated, QA'd documentary.">
+  <meta name="keywords" content="Python, agentic AI, LLM orchestration, video production, Remotion, React, FFmpeg, TTS, Piper, faster-whisper, CLIP, computer vision, quality assurance, open source, AGPL, pipelines, resilience engineering, generative media">
+  <meta name="author" content="Piyusha Sayal">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.piyushasayal.com/projects/openmontage.html" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="OpenMontage | Piyusha Sayal">
+  <meta property="og:description" content="Open-source agentic video production: one command turns a topic into a researched, narrated, QA'd documentary.">
+  <meta property="og:url" content="https://www.piyushasayal.com/projects/openmontage.html">
+  <meta property="og:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Piyusha Sayal portfolio cover" />
+  <meta property="og:site_name" content="Piyusha Sayal">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OpenMontage | Piyusha Sayal">
+  <meta name="twitter:description" content="Open-source agentic video production: one command turns a topic into a researched, narrated, QA'd documentary.">
+  <meta name="twitter:image" content="https://www.piyushasayal.com/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html#top">
+        <img class="brand__logo" src="../assets/img/favicon.png" alt="Logo" />
+        <span class="brand__name">Piyusha <span class="brand__accent">Sayal</span></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" aria-label="Primary">
+        <a class="nav__link" href="../index.html#about" data-nav="about">About</a>
+        <a class="nav__link" href="../index.html#skills" data-nav="skills">Skills</a>
+        <a class="nav__link" href="../experience.html" data-nav="experience">Experience</a>
+        <a class="nav__link" href="../index.html#education" data-nav="education">Education</a>
+        <a class="nav__link" href="../projects.html" data-nav="projects">Projects</a>
+        <a class="nav__link nav__cta" href="../index.html#contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a class="csBack" href="../projects.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All projects</a>
+
+        <header class="csHead">
+          <p class="eyebrow">AI agents / Media generation / Open source</p>
+          <h1 class="csTitle">OpenMontage</h1>
+          <p class="csSubtitle">One command from topic to a finished, QA'd documentary built from real footage</p>
+          <p class="csStatus"><span class="statusBadge">In development</span> <span class="muted">Active development (the autonomous documentary runner works end to end; long-form narration timing is being tuned)</span></p>
+          <dl class="csMeta">
+            <div><dt>Type</dt><dd>Open-source agentic video production system (AGPLv3)</dd></div>
+            <div><dt>Platform</dt><dd>Python + Node.js (Remotion, HyperFrames), local-first</dd></div>
+            <div><dt>Role</dt><dd>Solo developer (design, engineering, AI)</dd></div>
+            <div><dt>Year</dt><dd>2026</dd></div>
+          </dl>
+          <div class="pTags"><span class="pill">Python</span><span class="pill">FFmpeg</span><span class="pill">Remotion</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Piper TTS</span><span class="pill">faster-whisper</span><span class="pill">CLIP</span><span class="pill">FastAPI</span></div>
+        </header>
+
+        <article class="csBody">
+        <section class="csSection csSection--lead">
+          <h2>At a glance</h2>
+<p>An agentic video pipeline. It researches a topic, writes the script, narrates it locally, retrieves real motion footage from 16 free and public sources, renders explainer graphics, checks its own output for quality, and freezes a finished documentary. Every stage can resume where it left off.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>Overview</h2>
+<p>OpenMontage turns a single command such as <code>--topic &quot;Why Airplane Windows Are Round&quot; --target-minutes 9</code> into a finished explainer documentary. The film has narration, captions, generated explainer graphics and real footage from stock libraries and public archives. The system runs local-first on free-tier providers. Python owns the deterministic machinery (orchestration, persistence, retries, QA, rendering), while all creative content comes from pluggable LLM providers and is saved as explicit, inspectable artifacts.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The problem</h2>
+<p>A long-form explainer video (8–10 minutes, YouTube style) takes a person days of work: research, scripting, voiceover, finding footage, editing, captions and review. Most &quot;AI video&quot; tools shortcut this by animating a handful of still images. The result looks like a slideshow, and the tools rarely check whether what&#39;s on screen matches what&#39;s being said.</p>
+        </section>
+
+        <section class="csSection">
+          <h2>The solution</h2>
+<p>OpenMontage treats video production as a staged, auditable pipeline:</p>
+<ul>
+<li><strong>Research → Script → Explainers → Narration → Beat planning → Assets → Asset QA → Edit → Render → Final QA → Freeze</strong></li>
+<li>Every stage writes a JSON-schema-validated artifact, is cached, and can be resumed. Expensive stages are never redone unnecessarily.</li>
+<li><strong>A strict creative boundary:</strong> Python never writes creative content. If no usable LLM provider is available, the pipeline fails <em>before</em> narration rather than speaking placeholder text.</li>
+<li><strong>Real motion footage first:</strong> a visual planner turns each script beat into search queries across 16 free stock and archive sources, and CLIP-based scoring checks the candidate clips for relevance.</li>
+<li><strong>Self-checking output:</strong> automated QA detects black, frozen or crushed frames, slideshow risk and pacing problems, then repairs shots within a budget.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Key features</h2>
+<h3>Production</h3>
+<ul>
+<li>One command from topic to finished documentary, with resume from any stage.</li>
+<li>Stage versioning invalidates only what changed.</li>
+<li>Artifacts include a research brief, long-form script, beat plan and visual search plan.</li>
+<li>Local narration with Piper TTS, with measured speaking pace (words per minute) tracking.</li>
+<li>Timed, frame-safe captions.</li>
+<li>Generated explainer graphics: charts, stat cards, callouts and diagrams.</li>
+<li>Music search and mixing.</li>
+<li>A production freeze step produces an immutable final bundle plus a <code>production_report.json</code>.</li>
+</ul>
+<h3>Footage retrieval</h3>
+<ul>
+<li>16 free stock and public-archive sources, including Pexels, Pixabay, Wikimedia, Archive.org, NASA, NOAA, ESA, JAXA, the Library of Congress and NARA.</li>
+<li>Wave-based search, candidate pools, CLIP relevance scoring, source reuse limits and a check that enough footage exists before committing.</li>
+<li>Per-source circuit breakers, download deadlines and caching of failed searches.</li>
+</ul>
+<h3>Quality</h3>
+<ul>
+<li>Asset QA covering black and limited-range black frames, frozen ranges, motion confirmation, slideshow risk and pacing (long holds, oversized beats).</li>
+<li>A repair ladder that replaces bad shots using per-pass budgets.</li>
+<li>Final QA runs on the rendered MP4.</li>
+</ul>
+<h3>Platform</h3>
+<ul>
+<li>13 pipelines, including:<ul>
+<li>documentary montage and animated explainer;</li>
+<li>talking head and screen demo;</li>
+<li>podcast repurposing and a clip factory;</li>
+<li>localization dubbing and more.</li>
+</ul>
+</li>
+<li>100+ tools covering text-to-speech, image and video generation, avatars and lip-sync, enhancement, and 3D.</li>
+<li>Budget governance: estimate, then reserve, then reconcile.</li>
+<li>Backlot, a live local storyboard board for watching a run.</li>
+<li>Agent-first mode: coding agents can drive the pipeline from YAML manifests and markdown skills.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>How it works</h2>
+<p>A Python orchestrator runs the stages in sequence and persists an artifact after each one. LLM calls go through task-specific provider chains that fail over automatically (Groq, Gemini, OpenRouter, Ollama, and optionally OpenAI or Anthropic). Rendering uses Remotion (React) and HyperFrames (HTML/CSS/GSAP), and FFmpeg handles probing, trimming and muxing.</p>
+<figure class="csFigure"><img src="../assets/img/projects/openmontage/architecture.svg" alt="OpenMontage architecture diagram" loading="lazy"></figure>        </section>
+
+        <section class="csSection">
+          <h2>Tech stack</h2>
+<div class="csTable"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technologies</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Core pipeline</td>
+<td>Python 3.14, pydantic, jsonschema, PyYAML</td>
+</tr>
+<tr>
+<td>Rendering</td>
+<td>Node.js, Remotion (React/TypeScript), HyperFrames (HTML/CSS/GSAP), FFmpeg / ffprobe</td>
+</tr>
+<tr>
+<td>Audio and captions</td>
+<td>Piper TTS (local), optional cloud TTS, faster-whisper (alignment)</td>
+</tr>
+<tr>
+<td>Relevance and QA</td>
+<td>CLIP embeddings, NumPy, Pillow frame analysis</td>
+</tr>
+<tr>
+<td>LLM providers</td>
+<td>Groq, Gemini, OpenRouter, Ollama (local), optional OpenAI / Anthropic, all with failover chains</td>
+</tr>
+<tr>
+<td>Footage</td>
+<td>Pexels, Pixabay, Wikimedia, Archive.org, NASA, NOAA, ESA, JAXA, Library of Congress, NARA, Mixkit, Coverr, Videvo and more</td>
+</tr>
+<tr>
+<td>Live board</td>
+<td>FastAPI, Uvicorn, watchfiles</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>pytest (~300 test files across contracts, pipelines, QA and tools)</td>
+</tr>
+</tbody></table>
+</div>        </section>
+
+        <section class="csSection">
+          <h2>Engineering highlights</h2>
+<ul>
+<li><strong>A clean determinism boundary.</strong> Orchestration, persistence, retries, repair, QA, rendering and freezing are deterministic Python. Creative content is always a saved artifact from a provider, never hard-coded text.</li>
+<li><strong>Resumable and cached.</strong> Every stage is resumable. Stage versioning and render fingerprinting mean only the changed parts are recomputed, and the final render is reused when inputs match.</li>
+<li><strong>Provider resilience.</strong> Task-specific failover chains mean a single provider hitting its free quota no longer stops a run.</li>
+<li><strong>Retrieval engineering.</strong> Wave-based search, per-source circuit breakers, per-download deadlines, caching of failed searches and supply preflight keep long runs moving even when sources misbehave.</li>
+<li><strong>Automated video QA.</strong> Frame analysis detects black, frozen and crushed segments, then a budgeted repair ladder swaps defective shots automatically.</li>
+<li><strong>Schema-validated artifacts.</strong> Canonical JSON schemas (research, script, beats, visual plans) make every stage inspectable and testable.</li>
+<li><strong>Proven end to end.</strong> One completed documentary ran fully autonomously, producing 60 beats and 82 shots (average shot about 4.5 s), with no beats left without footage and 8 automated QA repairs.</li>
+<li><strong>Extensible architecture.</strong> A tool registry, a BaseTool contract, selector and provider tools, and 13 pipeline manifests.</li>
+</ul>
+        </section>
+
+        <section class="csSection">
+          <h2>Challenges &amp; what I learned</h2>
+<ol>
+<li><strong>Keeping AI creative but the system reliable.</strong> <em>Challenge:</em> LLM output is variable, and long JSON responses sometimes get cut off. <em>Approach:</em> schema validation, bounded recovery from truncated output, and a hard rule that the pipeline fails early instead of narrating placeholder text. <em>Lesson:</em> treat model output as untrusted input to deterministic code.</li>
+<li><strong>Free sources are unreliable.</strong> <em>Challenge:</em> stock and archive APIs time out, change their HTML or return irrelevant clips. <em>Approach:</em> circuit breakers, deadlines, caching of failed searches, CLIP relevance scoring and supply preflight. <em>Lesson:</em> retrieval at scale is mostly failure handling.</li>
+<li><strong>Shots that look fine but aren&#39;t.</strong> <em>Challenge:</em> downloaded clips can contain black leaders, frozen frames or crushed blacks. <em>Approach:</em> frame-level QA with defects scoped to time ranges and a budgeted repair ladder. <em>Lesson:</em> automated review is what makes autonomous production usable.</li>
+<li><strong>Matching narration and visual timing.</strong> <em>Challenge:</em> in long-form runs, fixed scene lengths can outrun the narration and leave silent stretches. <em>Approach (in progress):</em> narrate first, measure the actual speech duration, then size beats to fit it, and enforce script length from measured words per minute. <em>Lesson:</em> derive timing from what you have measured, not from targets.</li>
+</ol>
+        </section>
+
+        <section class="csSection">
+          <h2>Status &amp; what's next</h2>
+<ul>
+<li>The autonomous documentary runner works end to end and has delivered a complete film. Several other topic projects are at various stages.</li>
+<li>Current focus: timing driven by narration length, plus stricter enforcement of script length.</li>
+<li>Planned next:<ul>
+<li>a human review checkpoint in Backlot, so shots can be approved or swapped before rendering;</li>
+<li>sound design and music ducking;</li>
+<li>a script fact-check pass with citations;</li>
+<li>tracking of licence attribution for every clip;</li>
+<li>thumbnail, title and chapter generation;</li>
+<li>vertical short cutdowns;</li>
+<li>one-click Docker setup.</li>
+</ul>
+</li>
+<li>Intended as a human-in-the-loop production tool, with AI disclosure for published content.</li>
+</ul>
+        </section>
+        </article>
+
+        <nav class="csPager" aria-label="More projects">
+          <a class="csPager__link" href="mylookfit.html"><span class="muted">Previous</span>MyLookFit</a>
+          <a class="csPager__link csPager__link--next" href="linkedup.html"><span class="muted">Next</span>LinkedUp</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+<footer class="siteFooter">
+  <div class="footerInner">
+    <div class="footerLeft">
+      <span class="footerName">Piyusha Sayal | Data Engineer</span>
+    </div>
+
+    <div class="footerCenter">
+      <span>© <span id="year"></span> All rights reserved</span>
+    </div>
+
+    <div class="footerRight">
+      <button class="toTop" type="button" aria-label="Back to top">Back to Top</button>
+    </div>
+  </div>
+</footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>

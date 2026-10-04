@@ -50,6 +50,16 @@ I focus strongly on:
 
 Some of the projects highlighted on the portfolio include:
 
+**Product & AI builds** (each has a case-study page under `projects/`):
+
+- **ChangeGuard**: AI agent that turns a slipped milestone into an evidenced, human-approved recovery plan (Copilot Studio, Power Automate, Dataverse).
+- **MyLookFit**: AI personal stylist mobile app, from one selfie (Expo, FastAPI, MediaPipe, OpenCV).
+- **OpenMontage**: open-source agentic video production, from topic to QA'd documentary (Python, FFmpeg, Remotion).
+- **LinkedUp**: resume to recruiter-ready LinkedIn profile (Next.js, Cloudflare Workers, AWS Bedrock).
+- Also: Coloring Book Factory, SlateMetric, AI Data Investigator, PantryChef, Career Learning OS, MiniSplit and AI Business OS (design case study).
+
+**Data & analytics:**
+
 - **Task Management Application**  
   User-focused task tracking app designed for clean workflows and usability.
 
