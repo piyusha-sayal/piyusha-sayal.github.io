@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="705" height="1010" viewBox="0 0 705 1010" role="img" aria-labelledby="t d" font-family="Arial,Helvetica,sans-serif">
+  <title id="t">GridWindow FlexPay architecture</title>
+  <desc id="d">Driver request flows through a deterministic scheduler and validator, driver approval, PayPal authorization, simulated delivery, then capture, void or operator review. A bounded LLM layer assists only.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff9a4d"/></marker>
+    <style>
+      .b{fill:#1b1b1f;stroke:#ff9a4d;stroke-width:1.5}
+      .g{fill:#16231c;stroke:#4fd18b;stroke-width:1.5}
+      .l{fill:#1d1a2b;stroke:#9b8cff;stroke-width:1.5;stroke-dasharray:6 4}
+      .t{fill:#f3f3f3;font-size:15px;font-weight:700;text-anchor:middle}
+      .s{fill:#bdbdc4;font-size:12.5px;text-anchor:middle}
+      .e{stroke:#ff9a4d;stroke-width:1.6;fill:none;marker-end:url(#a)}
+      .d{stroke:#9b8cff;stroke-width:1.4;fill:none;stroke-dasharray:6 4;marker-end:url(#a)}
+    </style>
+  </defs>
+
+  <rect class="b" x="177" y="10" width="350" height="62" rx="10"/>
+  <text class="t" x="352" y="37">Driver request</text>
+  <text class="s" x="352" y="58">form or natural language: energy, deadline, budget</text>
+
+  <rect class="l" x="500" y="100" width="195" height="86" rx="10"/>
+  <text class="t" x="597" y="132">LLM layer (bounded)</text>
+  <text class="s" x="597" y="152">Gemini → OpenRouter →</text>
+  <text class="s" x="597" y="170">deterministic fallback</text>
+
+  <rect class="g" x="177" y="100" width="260" height="86" rx="10"/>
+  <text class="t" x="307" y="132">15-minute scheduler</text>
+  <text class="s" x="307" y="152">ports 3.6 / 7.2 / 11 kW, 24 kW site cap,</text>
+  <text class="s" x="307" y="170">existing load, efficiency, deadline</text>
+
+  <rect class="g" x="177" y="216" width="260" height="62" rx="10"/>
+  <text class="t" x="307" y="243">Independent validator</text>
+  <text class="s" x="307" y="263">re-checks every schedule, rejects infeasible</text>
+
+  <rect class="b" x="177" y="308" width="260" height="62" rx="10"/>
+  <text class="t" x="307" y="335">Validated offers</text>
+  <text class="s" x="307" y="355">price, savings, exact terms (hash-locked)</text>
+
+  <rect class="b" x="177" y="400" width="260" height="62" rx="10"/>
+  <text class="t" x="307" y="427">Driver approves exact terms</text>
+  <text class="s" x="307" y="447">no stale or implied consent</text>
+
+  <rect class="b" x="177" y="492" width="260" height="62" rx="10"/>
+  <text class="t" x="307" y="519">PayPal Sandbox: authorize</text>
+  <text class="s" x="307" y="539">idempotency keys, signed webhooks</text>
+
+  <rect class="b" x="177" y="584" width="260" height="62" rx="10"/>
+  <text class="t" x="307" y="611">Simulated delivery</text>
+  <text class="s" x="307" y="631">metered energy vs. agreed target</text>
+
+  <rect class="g" x="20" y="700" width="190" height="78" rx="10"/>
+  <text class="t" x="115" y="730">Capture once</text>
+  <text class="s" x="115" y="750">qualifying delivery</text>
+
+  <rect class="g" x="257" y="700" width="190" height="78" rx="10"/>
+  <text class="t" x="352" y="730">Void</text>
+  <text class="s" x="352" y="750">eligible failure, $0 collected</text>
+
+  <rect class="b" x="494" y="700" width="190" height="78" rx="10"/>
+  <text class="t" x="589" y="730">Operator review</text>
+  <text class="s" x="589" y="750">unresolved cases</text>
+
+  <rect class="b" x="20" y="830" width="664" height="70" rx="10"/>
+  <text class="t" x="352" y="858">Reconciliation: provider read-back confirms the real capture / void</text>
+  <text class="s" x="352" y="880">local state never substitutes for PayPal's result</text>
+
+  <rect class="g" x="20" y="930" width="664" height="64" rx="10"/>
+  <text class="t" x="352" y="957">Recovery loop</text>
+  <text class="s" x="352" y="977">disturbance → candidate repairs → validate → consent if terms change → schedule version N+1, or keep original</text>
+
+  <path class="e" d="M352 72V100" transform="translate(-45 0)"/>
+  <path class="e" d="M307 186V216"/>
+  <path class="e" d="M307 278V308"/>
+  <path class="e" d="M307 370V400"/>
+  <path class="e" d="M307 462V492"/>
+  <path class="e" d="M307 554V584"/>
+  <path class="e" d="M307 646V672Q307 686 115 686V700"/>
+  <path class="e" d="M307 646V700" transform="translate(45 0)"/>
+  <path class="e" d="M307 646V672Q307 686 589 686V700"/>
+  <path class="d" d="M500 143H437"/>
+</svg>
